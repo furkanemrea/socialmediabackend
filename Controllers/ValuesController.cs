@@ -19,7 +19,7 @@ namespace InstagramTutorialWebApi.Controllers
             DataTable dt = new DataTable();
             string query = @"select * from Kullanici";
 
-            var con = new SqlConnection(ConfigurationManager.ConnectionStrings["InstaProject"].ConnectionString);
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["InstaProject"].ConnectionString);
             var command = new SqlCommand(query, con);
 
             using (var da = new SqlDataAdapter(command))

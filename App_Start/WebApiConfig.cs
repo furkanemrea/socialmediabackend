@@ -25,7 +25,7 @@ namespace InstagramTutorialWebApi
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(
                new MediaTypeHeaderValue("text/html")
                );
-            config.EnableCors(new EnableCorsAttribute("http://localhost:3000", "*", "*"));
+            config.EnableCors(new EnableCorsAttribute("http://localhost:3001", "*", "*"));
         }
     }
 }
